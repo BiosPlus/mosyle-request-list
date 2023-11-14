@@ -46,11 +46,12 @@
 //   font-size: smaller;
 // }
 
-.table-summary {
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+// Make the Summary cell easier to read
+.tr:nth-child(3) { 
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
