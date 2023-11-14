@@ -45,7 +45,7 @@ By having a public list of requests, we hope to provide greater transparency on 
 			<td markdown="span">⚠️</td>
 			<td markdown="span">{{ ticket.ticket_number }}</td>
 			<td markdown="span">{{ ticket.title }}</td>
-			<td markdown="span">{{ ticket.summary }}</td>
+			<td class="summary" markdown="span" title="{{ ticket.summary }}">{{ ticket.summary }}</td>
 			<td markdown="span">{{ ticket.submitted_on }}</td>
 			<td markdown="span">{{ ticket.last_update }}</td>
 			<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>

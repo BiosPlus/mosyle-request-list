@@ -37,6 +37,18 @@ tr {
   }
 }
 
+// Centre the text in the first table column
+td:nth-child(1) {
+  text-align: center;
+}
+
 .footnotes {
   font-size: smaller;
+}
+
+.summary {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
