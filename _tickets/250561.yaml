@@ -2,7 +2,8 @@
 status: active
 ticket_number: 250561
 title: Feature Request Tracker
-summary: "This request is for a public feature tracker.
+summary: |
+"This request is for a public feature tracker.
 
 A good example of this is over at https://hudu.canny.io/ where users submit requests and the Hudu team assesses viability + gives status updates on implementation.
 

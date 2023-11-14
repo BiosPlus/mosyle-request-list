@@ -37,17 +37,17 @@
 //   }
 // }
 
-// // Centre the text in the first table column
-// td:nth-child(1) {
-//   text-align: center;
-// }
+// Centre the text in the first table column
+td:nth-child(1) {
+  text-align: center;
+}
 
 // .footnotes {
 //   font-size: smaller;
 // }
 
 // Make the Summary cell easier to read
-.tr:nth-child(3) { 
+.td:nth-child(3) { 
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
