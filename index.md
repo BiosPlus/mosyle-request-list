@@ -24,12 +24,11 @@ By having a public list of requests, we hope to provide greater transparency on 
 	{% endif %}
 {% endfor %}
 
-## The List
-
+## Current Requests ⚠️ ##
+Current common requests from the community.
 <table class="sortable">
 	<thead>
 		<tr>
-			<th>Status</th>
 			<th>Ticket Number</th>
 			<th>Title</th>
 			<th>Summary</th>
@@ -42,7 +41,6 @@ By having a public list of requests, we hope to provide greater transparency on 
 	<tbody>
 	{% for ticket in default %}
 		<tr>
-			<td markdown="span">⚠️</td>
 			<td markdown="span">{{ ticket.ticket_number }}</td>
 			<td markdown="span">{{ ticket.title }}</td>
 			<td class="summary" markdown="span" title="{{ ticket.summary }}">{{ ticket.summary }}</td>
@@ -56,13 +54,12 @@ By having a public list of requests, we hope to provide greater transparency on 
 
 </table>
 
-## Success Stories ##
+## Success Stories ✅##
 Some tickets have already been actioned, kudos Mosyle!
 
 <table class="sortable">
 	<thead>
 		<tr>
-			<th>Status</th>
 			<th>Ticket Number</th>
 			<th>Title</th>
 			<th>Summary</th>
@@ -74,7 +71,6 @@ Some tickets have already been actioned, kudos Mosyle!
 	<tbody>
 		{% for ticket in success %}
 		<tr>
-			<td markdown="span">✅</td>
 			<td markdown="span">{{ ticket.ticket_number }}</td>
 			<td markdown="span">{{ ticket.title }}</a></td>
 			<td markdown="span">{{ ticket.summary }}</td>
