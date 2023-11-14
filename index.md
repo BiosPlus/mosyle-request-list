@@ -54,7 +54,7 @@ Current common requests from the community.
 
 </table>
 
-## Success Stories ✅##
+## Success Stories ✅ ##
 Some tickets have already been actioned, kudos Mosyle!
 
 <table class="sortable">
