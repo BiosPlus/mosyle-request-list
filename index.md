@@ -44,7 +44,7 @@ By having a public list of requests, we hope to provide greater transparency on 
 		<tr>
 			<td markdown="span">⚠️</td>
 			<td markdown="span">{{ ticket.ticket_number }}</td>
-			<td markdown="span">{{ ticket.title }}</a></td>
+			<td markdown="span">{{ ticket.title }}</td>
 			<td markdown="span">{{ ticket.summary }}</td>
 			<td markdown="span">{{ ticket.submitted_on }}</td>
 			<td markdown="span">{{ ticket.last_update }}</td>
