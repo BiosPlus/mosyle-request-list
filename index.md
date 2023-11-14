@@ -13,14 +13,14 @@ Currently there is no publicly accessible roadmap available for requests, and ti
 By having a public list of requests, we hope to provide greater transparency on issues and features that have been raised by administrators like you, and maybe inspire the creation of an official public tracker.
 </details>
 
-{% assign all = site.tickets | sort: "title" %}
-{% assign tickets = "" | split: ',' %}
+{% assign all = site.tickets | sort: "ticket_number" %}
+{% assign default = "" | split: ',' %}
 {% assign success = "" | split: ',' %}
 {% for ticket in all %}
 	{% if ticket.status contains "completed" %}
 		{% assign success = success | push: ticket %}
 	{% else %}
-		{% assign ticket = tickets | push: ticket %}
+		{% assign default = default | push: ticket %}
 	{% endif %}
 {% endfor %}
 
@@ -97,4 +97,4 @@ Easy, pop on over to the github repo listed below and open either an issue or a 
 
 ## Thanks:
 
-Thanks to robchahin who published sso.tax, whose site/repo served as a good foundation for this github page.
+Thanks to robchahin who published sso.tax, whose site/repo served as a good foundation for this github
