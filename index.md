@@ -1,6 +1,7 @@
 ---
 ---
 <script src="assets/js/sorttable.js"></script>
+<script src="assets/js/collapsible.js"></script>
 
 <details open>
 <summary>
@@ -31,24 +32,27 @@ Current common requests from the community.
 		<tr>
 			<th>Ticket Number</th>
 			<th>Title</th>
-			<!-- <th>Summary</th> -->
-			<th>Submitted On</th>
-			<th>Last Updated</th>
-			<th>Submitted by</th>
-			<th>Relevant Thread</th>
+			<th>Short Summary</th>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
 		{% for ticket in default %}
-			<tr>
-				<td markdown="span">{{ ticket.ticket_number }}</td>
-				<td markdown="span">[{{ ticket.title }}](## {{ ticket.summary }})</td>
-				<!-- <td class="table-summary" markdown="span" title="{{ ticket.summary }}">[{{ ticket.summary }}](## {ticket.summary})</td> -->
-				<td markdown="span">{{ ticket.submitted_on }}</td>
-				<td markdown="span">{{ ticket.last_update }}</td>
-				<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
-				<td markdown="span"><a href="{{ ticket.relevant_thread }}">🔗</a></td>
+			<tr class="collapsible">
+				<td markdown="span"><a href="{{ ticket.relevant_thread }}">{{ ticket.ticket_number }}</a></td>
+				<td markdown="span">{{ ticket.title }}</td>
+				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">{{ ticket.summary }}</td>
 			</tr>
+			<div class="content">
+				<div class="inner-content-summary">
+					<p>{{ ticket.summary }}</p>
+					<tr>
+						<td>Submitted: {{ ticket.submitted_on }}</td>
+						<td>By: {{ ticket.submitted_by }}</td>
+						<td>Last Update: {{ ticket.last_update }} </td>
+					</tr>
+				</div>
+			</div> 
 		{% endfor %}
 	</tbody>
 
