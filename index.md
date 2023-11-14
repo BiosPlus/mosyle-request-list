@@ -14,7 +14,7 @@
 		content.style.maxHeight = content.scrollHeight + "px";
 		} 
 	});
-	}	
+	}
 </script>
 
 <details open>
