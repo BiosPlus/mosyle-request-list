@@ -1,21 +1,6 @@
 ---
 ---
 <script src="assets/js/sorttable.js"></script>
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-	for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.maxHeight){
-		content.style.maxHeight = null;
-		} else {
-		content.style.maxHeight = content.scrollHeight + "px";
-		} 
-	});
-	}
-</script>
 
 <details open>
 <summary>
@@ -46,30 +31,27 @@ Current common requests from the community.
 		<tr>
 			<th>Ticket Number</th>
 			<th>Title</th>
-			<th>Short Summary</th>
+			<!-- <th>Summary</th> -->
+			<th>Submitted On</th>
+			<th>Last Updated</th>
+			<th>Submitted by</th>
+			<th>Relevant Thread</th>
 		</tr>
 	</thead>
 	<tbody>
 		{% for ticket in default %}
 			<tr>
-				<td markdown="span"><a href="{{ ticket.relevant_thread }}">{{ ticket.ticket_number }}</a></td>
-				<td markdown="span">{{ ticket.title }}</td>
-				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">Short summary dummy</td>
-			</tr>
-			<tr>
-			<table class="content">
-				<table>
-					<tr class="info-row">{{ ticket.summary }}</tr>
-				</table>
-				<tr class="info-row">
-					<td class="info-col">Submitted: {{ ticket.submitted_on }}</td>
-					<td class="info-col">By: {{ ticket.submitted_by }}</td>
-					<td class="info-col">Last Update: {{ ticket.last_update }}</td>
-				</tr>
-			</table>
+				<td markdown="span">{{ ticket.ticket_number }}</td>
+				<td markdown="span">[{{ ticket.title }}](## {{ ticket.summary }})</td>
+				<!-- <td class="table-summary" markdown="span" title="{{ ticket.summary }}">[{{ ticket.summary }}](## {ticket.summary})</td> -->
+				<td markdown="span">{{ ticket.submitted_on }}</td>
+				<td markdown="span">{{ ticket.last_update }}</td>
+				<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
+				<td markdown="span"><a href="{{ ticket.relevant_thread }}">🔗</a></td>
 			</tr>
 		{% endfor %}
 	</tbody>
+
 </table>
 
 ## ✅ Success Stories ##
