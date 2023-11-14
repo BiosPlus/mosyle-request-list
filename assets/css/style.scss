@@ -53,6 +53,11 @@ td:nth-child(1) {
   white-space: nowrap;
 }
 
-.main_content {
-  max-width: 100rem;
+@media screen and (min-width: 64em) {
+  .main-content {
+      max-width:100rem;
+      padding: 2rem 6rem;
+      margin: 0 auto;
+      font-size: 1.1rem
+  }
 }
