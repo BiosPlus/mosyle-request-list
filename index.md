@@ -31,7 +31,7 @@ Current common requests from the community.
 		<tr>
 			<th>Ticket Number</th>
 			<th>Title</th>
-			<th>Summary</th>
+			<!-- <th>Summary</th> -->
 			<th>Submitted On</th>
 			<th>Last Updated</th>
 			<th>Submitted by</th>
@@ -62,7 +62,7 @@ Some tickets have already been actioned, kudos Mosyle!
 		<tr>
 			<th>Ticket Number</th>
 			<th>Title</th>
-			<th>Summary</th>
+			<!-- <th>Summary</th> -->
 			<th>Last Updated</th>
 			<th>Submitted by</th>
 			<th>Relevant Thread</th>
