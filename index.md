@@ -47,7 +47,6 @@ Current common requests from the community.
 			<th>Ticket Number</th>
 			<th>Title</th>
 			<th>Short Summary</th>
-			<th>More</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -56,23 +55,21 @@ Current common requests from the community.
 				<td markdown="span"><a href="{{ ticket.relevant_thread }}">{{ ticket.ticket_number }}</a></td>
 				<td markdown="span">{{ ticket.title }}</td>
 				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">Short summary dummy</td>
-				<td><button class="collapsible"></button></td>
 			</tr>
-			<tr class="content">
+			<tr>
+			<table class="content">
 				<table>
-					<table>
-						<tr class="info-row">{{ ticket.summary }}</tr>
-					</table>
-					<tr class="info-row">
-						<td class="info-col">Submitted: {{ ticket.submitted_on }}</td>
-						<td class="info-col">By: {{ ticket.submitted_by }}</td>
-						<td class="info-col">Last Update: {{ ticket.last_update }}</td>
-					</tr>
+					<tr class="info-row">{{ ticket.summary }}</tr>
 				</table>
+				<tr class="info-row">
+					<td class="info-col">Submitted: {{ ticket.submitted_on }}</td>
+					<td class="info-col">By: {{ ticket.submitted_by }}</td>
+					<td class="info-col">Last Update: {{ ticket.last_update }}</td>
+				</tr>
+			</table>
 			</tr>
 		{% endfor %}
 	</tbody>
-
 </table>
 
 ## ✅ Success Stories ##
