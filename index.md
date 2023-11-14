@@ -60,7 +60,9 @@ Current common requests from the community.
 			</tr>
 			<tr class="content">
 				<table>
-					<tr class="info-row">{{ ticket.summary }}</tr>
+					<table>
+						<tr class="info-row">{{ ticket.summary }}</tr>
+					</table>
 					<tr class="info-row">
 						<td class="info-col">Submitted: {{ ticket.submitted_on }}</td>
 						<td class="info-col">By: {{ ticket.submitted_by }}</td>
