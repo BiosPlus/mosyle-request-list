@@ -37,11 +37,13 @@ Current common requests from the community.
 	</thead>
 	<tbody>
 		{% for ticket in default %}
-			<tr class="collapsible">
+		<button class="collapsible">
+			<tr>
 				<td markdown="span"><a href="{{ ticket.relevant_thread }}">{{ ticket.ticket_number }}</a></td>
 				<td markdown="span">{{ ticket.title }}</td>
 				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">Short summary dummy</td>
 			</tr>
+		</button>
 			<div class="content">
 				<div class="inner-content-summary">
 					<div class="info-row">{{ ticket.summary }}</div>
