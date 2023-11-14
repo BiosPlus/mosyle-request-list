@@ -39,16 +39,16 @@ Current common requests from the community.
 		</tr>
 	</thead>
 	<tbody>
-	{% for ticket in default %}
-		<tr>
-			<td markdown="span">{{ ticket.ticket_number }}</td>
-			<td markdown="span">{{ ticket.title }}</td>
-			<td class="summary" markdown="span" title="{{ ticket.summary }}">{{ ticket.summary }}</td>
-			<td markdown="span">{{ ticket.submitted_on }}</td>
-			<td markdown="span">{{ ticket.last_update }}</td>
-			<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
-			<td markdown="span"><a href="{{ ticket.relevant_thread }}">🔗</a></td>
-		</tr>
+		{% for ticket in default %}
+			<tr>
+				<td markdown="span">{{ ticket.ticket_number }}</td>
+				<td markdown="span">{{ ticket.title }}</td>
+				<td class="summary" markdown="span" title="{{ ticket.summary }}">{{ ticket.summary }}</td>
+				<td markdown="span">{{ ticket.submitted_on }}</td>
+				<td markdown="span">{{ ticket.last_update }}</td>
+				<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
+				<td markdown="span"><a href="{{ ticket.relevant_thread }}">🔗</a></td>
+			</tr>
 		{% endfor %}
 	</tbody>
 
