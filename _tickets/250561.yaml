@@ -7,7 +7,7 @@ summary: |
   
   A good example of this is over at https://hudu.canny.io/ where users submit requests and the Hudu team assesses viability + gives status updates on implementation.
   
-  It's pretty disheartening to lodge a request via your support portal and for the tickets to be closed with a ''This has been sent to our product team'' message in response, but with no tracking for decision made or progress on the matter. Especially so considering competitors have their own semi-private feature trackers.
+  It's pretty disheartening to lodge a request via your support portal and for the tickets to be closed with a 'This has been sent to our product team' message in response, but with no tracking for decision made or progress on the matter. Especially so considering competitors have their own semi-private feature trackers.
   
   A great self hostable FOSS option to achieve this function can be found here https://github.com/logchimp/logchimp'
 
