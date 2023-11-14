@@ -3,55 +3,6 @@
 
 @import "{{ site.theme }}";
 
-h2 {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-td {
-  font-size: 1.0rem;
-}
-
-summary { // "Temporary" hack for h2-inside-summary formatting
-  margin-bottom: 1rem;
-  font-weight: normal;
-  color: #159957;
-  display: list-item;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-summary > p {
-  display: inline;
-}
-
-.page-header {
-  padding-bottom: 0em !important;
-  a.btn { display: none; }
-}
-
-// Don't wrap the Source or Date Added columns
-tr {
-  td:nth-child(5), td:nth-child(6) {
-    white-space: nowrap;
-  }
-}
-
-// Centre the text in the first table column
-td:nth-child(1) {
-  text-align: center;
-}
-
-.footnotes {
-  font-size: smaller;
-}
-
-.table-summary {
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
 @media screen and (min-width: 64em) {
   .main-content {
