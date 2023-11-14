@@ -10,6 +10,7 @@ This is the title of the ticket you've penned to support.
 ## Relevant thread
 Relevant thread is a place where discussion of the matter takes place. As well as updates where copies of support team responses can be pasted.
 This can be a github thread or a slack conversation. Do try to keep in mind we want this to be publically accessible.
+For github threads, go create a discussion in https://github.com/BiosPlus/mosyle-request-list/discussions
 
 ## Submitted by information
 Information on who submitted the item are non-essential and are only used if you would like to take credit and ownership of the idea.
