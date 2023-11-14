@@ -24,7 +24,7 @@ By having a public list of requests, we hope to provide greater transparency on 
 	{% endif %}
 {% endfor %}
 
-## Current Requests ⚠️ ##
+## ⚠️ Current Requests ##
 Current common requests from the community.
 <table class="sortable">
 	<thead>
@@ -54,7 +54,7 @@ Current common requests from the community.
 
 </table>
 
-## Success Stories ✅ ##
+## ✅ Success Stories ##
 Some tickets have already been actioned, kudos Mosyle!
 
 <table class="sortable">
