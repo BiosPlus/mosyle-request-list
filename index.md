@@ -49,7 +49,7 @@ By having a public list of requests, we hope to provide greater transparency on 
 			<td markdown="span">{{ ticket.submitted_on }}</td>
 			<td markdown="span">{{ ticket.last_update }}</td>
 			<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
-			<td markdown="span">{{ ticket.relevant_thread }}</td>
+			<td markdown="span"><a href="{{ ticket.relevant_thread }}">🔗</a></td>
 		</tr>
 		{% endfor %}
 	</tbody>
@@ -80,7 +80,7 @@ Some tickets have already been actioned, kudos Mosyle!
 			<td markdown="span">{{ ticket.summary }}</td>
 			<td markdown="span">{{ ticket.last_update }}</td>
 			<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
-			<td markdown="span">{{ ticket.relevant_thread }}</td>
+			<td markdown="span"><a href="{{ ticket.relevant_thread }}">Link</a></td>
 		</tr>
 		{% endfor %}
 	</tbody>
