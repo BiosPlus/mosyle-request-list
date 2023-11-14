@@ -33,27 +33,29 @@ Current common requests from the community.
 			<th>Ticket Number</th>
 			<th>Title</th>
 			<th>Short Summary</th>
+			<th>More</th>
 		</tr>
 	</thead>
 	<tbody>
 		{% for ticket in default %}
-		<button class="collapsible">
 			<tr>
 				<td markdown="span"><a href="{{ ticket.relevant_thread }}">{{ ticket.ticket_number }}</a></td>
 				<td markdown="span">{{ ticket.title }}</td>
 				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">Short summary dummy</td>
+				<td><button class="collapsible">More</button>
 			</tr>
-		</button>
-			<div class="content">
-				<div class="inner-content-summary">
-					<div class="info-row">{{ ticket.summary }}</div>
-					<div class="info-row">
-						<div class="info-col">Submitted: {{ ticket.submitted_on }}</div>
-						<div class="info-col">By: {{ ticket.submitted_by }}</div>
-						<div class="info-col">Last Update: {{ ticket.last_update }}</div>
+			<tr>
+				<div class="content">
+					<div class="inner-content-summary">
+						<div class="info-row">{{ ticket.summary }}</div>
+						<div class="info-row">
+							<div class="info-col">Submitted: {{ ticket.submitted_on }}</div>
+							<div class="info-col">By: {{ ticket.submitted_by }}</div>
+							<div class="info-col">Last Update: {{ ticket.last_update }}</div>
+						</div>
 					</div>
 				</div>
-			</div> 
+			</tr>
 		{% endfor %}
 	</tbody>
 
