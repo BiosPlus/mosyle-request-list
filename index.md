@@ -43,10 +43,7 @@ Current common requests from the community.
 			<tr>
 				<td markdown="span">{{ ticket.ticket_number }}</td>
 				<td markdown="span">{{ ticket.title }}</td>
-				<td markdown="span"><trigger for="modal:{{ ticket.ticketnumber }}">{{ ticket.summary }}</trigger></td>
-				<modal header="{{ ticket.ticket_number }} - {{ ticket.title }}>" id="modal:{{ ticket.ticket_number }}">
-				{{ ticket.summary }}
-				</modal>
+				<td markdown="span">{{ ticket.summary }}</td>
 				<td markdown="span">{{ ticket.submitted_on }}</td>
 				<td markdown="span">{{ ticket.last_update }}</td>
 				<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
