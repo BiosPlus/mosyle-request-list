@@ -40,7 +40,7 @@ By having a public list of requests, we hope to provide greater transparency on 
 		</tr>
 	</thead>
 	<tbody>
-	{% for ticket in tickets %}
+	{% for ticket in default %}
 		<tr>
 			<td markdown="span">⚠️</td>
 			<td markdown="span">{{ ticket.ticket_number }}</td>
