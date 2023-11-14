@@ -1,7 +1,21 @@
 ---
 ---
 <script src="assets/js/sorttable.js"></script>
-<script src="assets/js/collapsible.js"></script>
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+	for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		content.style.maxHeight = null;
+		} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	});
+	}	
+</script>
 
 <details open>
 <summary>
@@ -44,17 +58,15 @@ Current common requests from the community.
 				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">Short summary dummy</td>
 				<td><button class="collapsible"></button></td>
 			</tr>
-			<tr>
-				<div class="content">
-					<div class="inner-content-summary">
-						<div class="info-row">{{ ticket.summary }}</div>
-						<div class="info-row">
-							<div class="info-col">Submitted: {{ ticket.submitted_on }}</div>
-							<div class="info-col">By: {{ ticket.submitted_by }}</div>
-							<div class="info-col">Last Update: {{ ticket.last_update }}</div>
-						</div>
-					</div>
-				</div>
+			<tr class="content">
+				<table>
+					<tr class="info-row">{{ ticket.summary }}</tr>
+					<tr class="info-row">
+						<td class="info-col">Submitted: {{ ticket.submitted_on }}</td>
+						<td class="info-col">By: {{ ticket.submitted_by }}</td>
+						<td class="info-col">Last Update: {{ ticket.last_update }}</td>
+					</tr>
+				</table>
 			</tr>
 		{% endfor %}
 	</tbody>
