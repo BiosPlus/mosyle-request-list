@@ -94,3 +94,7 @@ How do I contribute my support request to this page?
 </summary>
 Easy, pop on over to the github repo listed below and open either an issue or a pull request with the required information. 
 </details>
+
+## Thanks:
+
+Thanks to robchahin who published sso.tax, whose site/repo served as a good foundation for this github page.
