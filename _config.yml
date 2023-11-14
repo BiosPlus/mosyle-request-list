@@ -1,0 +1,16 @@
+title: Unofficial Mosyle Request List
+description: >-
+  A table of requests made to the Mosyle support team, for easy sharing and tracking between administrators.
+
+url: https://biosplus.github.io/mosyle-request-list/
+
+# Not included by default but throws a Liquid exception if not present;
+# error only thrown in GHA, not during local builds
+repository: biosplus/mosyle-request-list
+
+theme: jekyll-theme-cayman
+kramdown:
+  parse_block_html: true
+
+collections:
+  - vendors

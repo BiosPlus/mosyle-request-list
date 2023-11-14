@@ -1,0 +1,11 @@
+---
+status: active
+ticket_number: 123789
+title: magic unicorns
+summary: magic isn't a thing yet, therefore unicorns are not a thing yet.
+relevant_thread: https://github.com/biosplus/mosyle-request-list/issues/1 # can also be a link to a slack conversation
+submitted_on: 2023-01-01
+last_update: 2023-01-01
+submitted_by: biosplus
+submitted_by_link: https://github.com/biosplus
+solution_date: 2023-01-02
