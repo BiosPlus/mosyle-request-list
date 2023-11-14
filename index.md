@@ -49,7 +49,11 @@ Current common requests from the community.
 				<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
 				<td markdown="span"><a href="{{ ticket.relevant_thread }}">🔗</a></td>
 			</tr>
-            <tr>{{ ticket.summary }}</tr>
+            <tr>
+                <td colspan=6>
+                    {{ ticket.summary }}
+                </td>
+            </tr>
 		{% endfor %}
 	</tbody>
 
