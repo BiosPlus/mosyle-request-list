@@ -42,8 +42,8 @@ Current common requests from the community.
 		{% for ticket in default %}
 			<tr>
 				<td markdown="span">{{ ticket.ticket_number }}</td>
-				<td markdown="span">{{ ticket.title }}</td>
-				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">[{{ ticket.summary }}](## {ticket.summary})</td>
+				<td markdown="span">[{{ ticket.title }}](## {{ ticket.summary }})</td>
+				<!-- <td class="table-summary" markdown="span" title="{{ ticket.summary }}">[{{ ticket.summary }}](## {ticket.summary})</td> -->
 				<td markdown="span">{{ ticket.submitted_on }}</td>
 				<td markdown="span">{{ ticket.last_update }}</td>
 				<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
@@ -72,8 +72,8 @@ Some tickets have already been actioned, kudos Mosyle!
 		{% for ticket in success %}
 		<tr>
 			<td markdown="span">{{ ticket.ticket_number }}</td>
-			<td markdown="span">{{ ticket.title }}</a></td>
-			<td markdown="span">{{ ticket.summary }}</td>
+			<td markdown="span">[{{ ticket.title }}](## {{ ticket.summary }})</td>
+			<!-- <td markdown="span">{{ ticket.summary }}</td> -->
 			<td markdown="span">{{ ticket.last_update }}</td>
 			<td markdown="span"><a href="{{ ticket.submitted_by_link }}">{{ ticket.submitted_by }}</a></td>
 			<td markdown="span"><a href="{{ ticket.relevant_thread }}">Link</a></td>
