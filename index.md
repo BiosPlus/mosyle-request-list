@@ -42,7 +42,7 @@ Current common requests from the community.
 				<td markdown="span"><a href="{{ ticket.relevant_thread }}">{{ ticket.ticket_number }}</a></td>
 				<td markdown="span">{{ ticket.title }}</td>
 				<td class="table-summary" markdown="span" title="{{ ticket.summary }}">Short summary dummy</td>
-				<td><button class="collapsible">More</button>
+				<td><button class="collapsible"></button></td>
 			</tr>
 			<tr>
 				<div class="content">
