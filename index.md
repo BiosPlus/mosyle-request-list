@@ -89,6 +89,8 @@ Some tickets have already been actioned, kudos Mosyle!
 ## FAQs
 
 <details>
-<summary>How do I contribute my support request to this page?</summary>
+<summary>
+How do I contribute my support request to this page?
+</summary>
 Easy, pop on over to the github repo listed below and open either an issue or a pull request with the required information. 
 </details>
