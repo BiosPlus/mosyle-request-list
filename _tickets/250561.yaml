@@ -1,11 +1,14 @@
 ---
 status: active
 ticket_number: 250561
-title: "This request is for a public feature tracker.\n\n
-A good example of this is over at https://hudu.canny.io/ where users submit requests and the Hudu team assesses viability + gives status updates on implementation.\n\n
-It's pretty disheartening to lodge a request via your support portal and for the tickets to be closed with a 'This has been sent to our product team' message in response, but with no tracking for decision made or progress on the matter. Especially so considering competitors have their own semi-private feature trackers.\n\n
+title: Feature Request Tracker
+summary: "This request is for a public feature tracker.
+
+A good example of this is over at https://hudu.canny.io/ where users submit requests and the Hudu team assesses viability + gives status updates on implementation.
+
+It's pretty disheartening to lodge a request via your support portal and for the tickets to be closed with a 'This has been sent to our product team' message in response, but with no tracking for decision made or progress on the matter. Especially so considering competitors have their own semi-private feature trackers.
+
 A great self hostable FOSS option to achieve this function can be found here https://github.com/logchimp/logchimp"
-summary: 
 relevant_thread: https://github.com/biosplus/mosyle-request-list/discussions/123 # can also be a link to a slack conversation
 submitted_on: 2023-11-13
 last_update: 2023-11-14
