@@ -11,7 +11,6 @@ This is a list of commonly requested features/bugs being made by administrators 
 Currently there is no publicly accessible roadmap available for requests, and tickets that are being logged are forwarded to a mysterious product team though never heard from again until maybe a release is made in their monthly updates.
 
 By having a public list of requests, we hope to provide greater transparency on issues and features that have been raised by administrators like you, and maybe inspire the creation of an official public tracker.
-
 </details>
 
 {% assign all = site.tickets | sort: "title" %}

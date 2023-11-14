@@ -13,4 +13,4 @@ kramdown:
   parse_block_html: true
 
 collections:
-  - vendors
+  - tickets
