@@ -13,13 +13,13 @@ has_toc: true
 {% for ticket in all %}
         {% if ticket.status contains "Success" %}
             {% assign success = success | push: ticket %}
-        {% elseif ticket.status contains "Progress" %}
+        {% elsif ticket.status contains "Progress" %}
             {% assign progress = progress | push: ticket %}
-        {% elseif ticket.status contains "Limbo" %}
+        {% elsif ticket.status contains "Limbo" %}
             {% assign limbo = limbo | push: ticket %}
         {% elseif ticket.status contains "Failed" %}
             {% assign failed = failed | push: ticket %}
-        {% elseif ticket.status contains "Pending" %}
+        {% elsif ticket.status contains "Pending" %}
             {% assign pending = pending | push: ticket %}
         {% else %}
             {% assign default = default | push: ticket %}
