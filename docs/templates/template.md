@@ -1,8 +1,8 @@
 ---
 layout: default
-parent: template
-
 ### Customise everything from here onwards
+# Be sure to change the parent to "tickets" rather than "template"
+parent: template
 title: 123456 - Ticket Title Here
 ticket_number: 123456
 ticket_title: Ticket Title Here
