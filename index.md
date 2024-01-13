@@ -5,10 +5,13 @@ has_children: true
 has_toc: true
 ---
 
-
 {% assign all = site.tickets | sort: "ticket_number" %}
 {% assign default = "" | split: ',' %}
 {% assign success = "" | split: ',' %}
+{% assign progress = "" | split: ',' %}
+{% assign limbo = "" | split: ',' %}
+{% assign failed = "" | split: ',' %}
+{% assign pending = "" | split: ',' %}
 {% assign all = site.docs.tickets | sort: "ticket_number" %}
 {% for ticket in all %}
         {% if ticket.status contains "Success" %}
