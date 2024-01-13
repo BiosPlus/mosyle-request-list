@@ -1,16 +1,32 @@
 title: Unofficial Mosyle Request List
-description: >-
-  A table of requests made to the Mosyle support team, for easy sharing and tracking between administrators.
+description: A table of requests made to the Mosyle support team, for easy sharing and tracking between administrators.
+theme: just-the-docs
 
 url: https://biosplus.github.io/mosyle-request-list/
 
-# Not included by default but throws a Liquid exception if not present;
-# error only thrown in GHA, not during local builds
-repository: biosplus/mosyle-request-list
+aux_links:
+  Template Repository: https://github.com/biosplus/mosyle-request-list
 
-theme: jekyll-theme-cayman
-kramdown:
-  parse_block_html: true
+# Search
+search_enabled: true
+search:
+  heading_level: 4
+  previews: 5
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: true
 
-collections:
-  - tickets
+# Github links
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/biosplus/mosyle-request-list"
+gh_edit_branch: "main"
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Last Modified info
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
