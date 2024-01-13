@@ -17,7 +17,7 @@ has_toc: true
             {% assign progress = progress | push: ticket %}
         {% elsif ticket.status contains "Limbo" %}
             {% assign limbo = limbo | push: ticket %}
-        {% elseif ticket.status contains "Failed" %}
+        {% elsif ticket.status contains "Failed" %}
             {% assign failed = failed | push: ticket %}
         {% elsif ticket.status contains "Pending" %}
             {% assign pending = pending | push: ticket %}
