@@ -32,7 +32,6 @@ Successful requests from the community.
 		<tr>
 			<th>Ticket Number</th>
 			<th>Title</th>
-			<!-- <th>Summary</th> -->
 			<th>Submitted On</th>
 		</tr>
 	</thead>
@@ -55,7 +54,6 @@ Requests that are currently in progress, meaning the Mosyle team is working on i
         <tr>
             <th>Ticket Number</th>
             <th>Title</th>
-            <!-- <th>Summary</th> -->
             <th>Submitted On</th>
         </tr>
     </thead>
@@ -78,7 +76,6 @@ Requests that are pending. These have just been submitted and lack a response, b
         <tr>
             <th>Ticket Number</th>
             <th>Title</th>
-            <!-- <th>Summary</th> -->
             <th>Submitted On</th>
         </tr>
     </thead>
@@ -101,7 +98,6 @@ Requests that have failed. They have been outright denied action.
         <tr>
             <th>Ticket Number</th>
             <th>Title</th>
-            <!-- <th>Summary</th> -->
             <th>Submitted On</th>
         </tr>
     </thead>
@@ -124,7 +120,6 @@ Requests that are in limbo. Unlikely to be updated as Mosyle haven't given a pro
         <tr>
             <th>Ticket Number</th>
             <th>Title</th>
-            <!-- <th>Summary</th> -->
             <th>Submitted On</th>
         </tr>
     </thead>
