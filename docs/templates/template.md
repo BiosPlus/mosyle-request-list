@@ -4,6 +4,8 @@ parent: template
 
 ### Customise everything from here onwards
 title: 123456 - Ticket Title Here
+ticket_number: 123456
+ticket_title: Ticket Title Here
 status: 
 # A Status may be any of the following:
 # "Pending" meaning the request has just been submitted and lacks response.
