@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Google Groups
-parent: Google Workspace
+title: template
+parent: template
 ---
-
