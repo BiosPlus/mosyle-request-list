@@ -1,6 +1,6 @@
 ---
 layout: default
-title: tickets
+title: Ticket List
 has_children: true
 has_toc: true
 ---
